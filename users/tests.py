@@ -11,6 +11,7 @@ class SeleniumTestCase(TestCase):
         chrome_options.add_argument('--disable-dev-shm-usage')
         self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options)
 
+
     def test_LoginAndRegistrationForm(self):
         self.driver.get("http://127.0.0.1:8000/")
         self.driver.find_element_by_xpath('/html/body/header/nav/div/div/div[2]/a[2]').click()
