@@ -9,7 +9,7 @@ class SeleniumTestCase(TestCase):
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
-        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options)
+        self.driver = webdriver.Chrome('/home/shree/chromedriver_linux64', options=chrome_options)
 
     def test_LoginAndRegistrationForm(self):
         self.driver.get("http://127.0.0.1:8000/")
