@@ -16,16 +16,16 @@ class SeleniumTestCase(TestCase):
         self.driver.get("http://127.0.0.1:8000/")
         self.driver.find_element_by_xpath('/html/body/header/nav/div/div/div[2]/a[2]').click()
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[1]/div/input').send_keys(
-            'sanjayrohra45')
+            'deepak')
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[2]/div/input').send_keys(
-            'rohra470@gmail.com')
+            'deepakm2808@gmail.com')
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[3]/div/input').send_keys(
-            'HelloWorld@123')
+            'deepak@123')
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[4]/div/input').send_keys(
-            'HelloWorld@123')
+            'deepak@123')
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/div/button').click()
 
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[1]/div/input').send_keys(
-            'sanjayrohra45')
+            'deepak')
         self.driver.find_element_by_xpath('/html/body/main/div/div[1]/div/form/fieldset/div[2]/div/input').send_keys(
-            'HelloWorld@123')
+            'deepak@123')
